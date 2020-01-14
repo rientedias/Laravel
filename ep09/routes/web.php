@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('site.home');
+})->name('site.home');
+Route::get('/cursos', function () {
+    return view('site.courses');
+})->name('site.courses');
+Route::get('/contatos', function () {
+    return view('site.contact');
+})->name('site.contact');
